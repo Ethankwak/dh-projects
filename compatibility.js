@@ -40,7 +40,6 @@ const result = {
 
 //compare which applicant is strongest in the needed category as
 let firstApplicant = input.applicants[0];
-let bestApplicant;
 let maxTrait = firstApplicant.attributes[minTrait];
 
 for (applicant of input.applicants) {
@@ -55,7 +54,6 @@ for (applicant of input.applicants) {
 
     //bonus points given to an applicant with the highest value in trait the team needs the most
     if (applicant.attributes[minTrait] > maxTrait) {
-        bestApplicant = applicant;
         maxTrait = applicant.attributes[minTrait];
         tieApplicants = [];
         score += 0.2;
