@@ -1,4 +1,4 @@
 # dh-projects
 
-## Compatibility 
+## Compatibility Predictor
 Takes in input with the readFileSync file system method and parses the JSON into an object. Then a new object is created which represents the total team trait values for each trait and adds them up. We then use these added-up trait values to find which trait is the weakest on the team. Since we are looking for compatible applicants, we want to find applicants who have the highest trait score for the weakest team trait. We then iterate through the applicants and add up their total scores by multiplying their scores by .25 or 1/4 since a 10/10/10/10 score would equal 1 this way. Then we look for the best applicant and give them additional points and then push every applicant and their scores into a object that stores the applicant's names and their scores. We then use the JSON stringify method to store the JSON output and output the scored applicants. We then use the writeFIleSync filesystem method to write the file to an output JSON file.
